@@ -1,0 +1,16 @@
+.container,.row,.col {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5 {
+  margin-bottom:25px;
+  font-size: 18px;
+}
+.highlight {
+  padding:5px;
+  border-radius:10px;
+  color:black;
+  font-weight: 600px;
+}
+.fa {
+  margin-right: 10px;
+}
