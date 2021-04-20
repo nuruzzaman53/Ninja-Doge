@@ -34,20 +34,29 @@ const Country = () => {
 
     return(
         <div className='container'>
-            <h1 className='display-4'>World Information</h1> <hr/>
+
+            <h1 className='display-4'>WorldInfo</h1> <hr/>
+
+            <form class="form-inline">
+                <input class="form-control mr-sm-2 col-md-8" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+
 
             <div className='row'>
                 
                 {data.slice(pageVisited,pageVisited + countryPerPage).map(c =>
-                         <div class="col-xs-9 col-sm-6  col-md-3 col-lg-2 my-1 card p-4 mx-2">
-                              <img src={c.flag}  alt={c.flag} style={{maxWidth:'100%'}}  />
-                             <h6 className='mt-2'>{c.name}</h6>
-                             <p>Capital: {c.capital}</p>
-                             <p>Region : {c.region}</p>
-                             <Link className='btn btn-outline-info' to={`/country/${c.name}`}  >
-                                 More Information
-                             </Link>
-
+                         <div class="col-3">
+                             <div className='card' style={{width: "18rem"}}>
+                                <img src={c.flag} className="card-img-top"  alt={c.flag}  />
+                                <div className='card-body'>
+                                    <h6 className='card-title'>{c.name}</h6>
+                                    <p className='card-text'>Capital: {c.capital}</p>
+                                    <Link className='btn btn-outline-info' to={`/country/${c.name}`}  >
+                                        + Details Information
+                                    </Link>
+                                </div>
+                             </div>
                        </div>
                  )}
             </div>

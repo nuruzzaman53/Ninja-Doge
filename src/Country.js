@@ -23,6 +23,7 @@ const Details = (props) => {
                         <div className='col-md-4'> 
                             <img src={c.flag} alt={c.flag} style={{maxWidth:'100%'}} /><br/>
                             <h1 className='display-4'>{c.name}</h1>
+                            <h5 className='btn btn-outline-primary'> Short Name : {c.alpha3Code}</h5>
                         </div>
 
                         <div className='col-md-8'>
