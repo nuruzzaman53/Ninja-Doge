@@ -17,3 +17,6 @@ h5 {
 .card {
   background-color: rgba(169, 168, 170, 0);
 }
+input[type='search'] {
+  width:50%;
+}

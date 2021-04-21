@@ -6,6 +6,10 @@ const Country = () => {
 
     const[data,setData] = useState([])
 
+    const [loading,setLoading] = useState(false)
+
+    const [search,setSearch] = useState('')
+
     const [pageNumber,setPageNumber] = useState(0)
 
     const countryPerPage = 20
@@ -15,14 +19,22 @@ const Country = () => {
     const pageCount = Math.ceil(data.length / countryPerPage)
 
     useEffect(()=> {
+        setLoading(true)
         fetch('https://restcountries.eu/rest/v2/all')
         .then(res => res.json())
         .then(data => {
             setData(data)
+            setLoading(false)
         })
-    })
+    },[])
 
     console.log(data)
+
+    const loadingData = (loading) => {
+        if(loading) {
+            return <i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+        }
+    }
 
 
     const changePage = ({selected}) => {
@@ -31,21 +43,27 @@ const Country = () => {
     
       }
 
+      const filteredData = data.filter(country => {
+          return country.name.toLowerCase().includes(search.toLowerCase())
+      })
+
 
     return(
         <div className='container'>
 
-            <h1 className='display-4'>WorldInfo</h1> <hr/>
+            <h1 className='display-4'>WorldInfo</h1>
+             <p style={{fontSize:'18px'}}>Discover the whole world with just one click</p> <br/>
 
-            <form class="form-inline">
-                <input class="form-control mr-sm-2 col-md-8" type="search" placeholder="Search" aria-label="Search" />
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <input type='search'           
+                className='form-control col-8' 
+                placeholder='Enter country'
+                onChange={ e => setSearch(e.target.value)}        
+            />
 
-
+            <br/>
             <div className='row'>
-                
-                {data.slice(pageVisited,pageVisited + countryPerPage).map(c =>
+            <div className='justify-content-center'>{loadingData(loading)}</div>
+                {filteredData.slice(pageVisited,pageVisited + countryPerPage).map(c =>
                          <div class="col-3">
                              <div className='card' style={{width: "18rem"}}>
                                 <img src={c.flag} className="card-img-top"  alt={c.flag}  />
