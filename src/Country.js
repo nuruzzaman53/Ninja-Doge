@@ -5,18 +5,32 @@ const Details = (props) => {
 
     const [data,setData] = useState([])
 
+    const [loading,setLoading] = useState(false)
+
     useEffect(() => {
+        setLoading(true)
         const countryId = props.match.params.countryId
         fetch(`https://restcountries.eu/rest/v2/name/${countryId}`)
         .then(response =>  response.json())
-        .then(data => setData(data))
-    })
+        .then(data => {
+            setData(data)
+            setLoading(false)
+        })
+    },[])
+
+    const loadingData = (loading) => {
+        if(loading) {
+            return <i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+
+        }
+    }
 
     return(
 
         <div className='container'>
-            <h1 className='display-4'>Country details information will display here</h1><hr/>
-            <Link to='/' className='page-link'><i className="fa fa-arrow-circle-left"></i> Back to Home</Link><br/>
+            <h1 className='display-4'>Country details information will display here</h1><br/>
+            <Link to='/' className='page-link col-md-2'><i className="fa fa-arrow-circle-left"></i> Back to Home</Link><br/>
+            {loadingData(loading)}
                 {data.map(c => 
                     <div className='row'>
 
