@@ -55,8 +55,8 @@ const Country = () => {
              <p style={{fontSize:'18px'}}>Discover the whole world with just one click</p> <br/>
 
             <input type='search'           
-                className='form-control col-8' 
-                placeholder='Enter country'
+                className='form-control col-md-8 col-sm-3' 
+                placeholder='Enter A country name to search .....'
                 onChange={ e => setSearch(e.target.value)}        
             />
 
@@ -64,16 +64,16 @@ const Country = () => {
             <div className='row'>
             <div className='justify-content-center'>{loadingData(loading)}</div>
                 {filteredData.slice(pageVisited,pageVisited + countryPerPage).map(c =>
-                         <div class="col-3">
-                             <div className='card' style={{width: "18rem"}}>
+                         <div class="col-xs-10 col-sm-5 col-md-5  col-lg-4 col-xl-3 my-3">
+                             <div className='card' style={{width: "18rem" ,height:"18rem"}}>
+                                <Link to={`/country/${c.name}`} className='link' >
                                 <img src={c.flag} className="card-img-top"  alt={c.flag}  />
                                 <div className='card-body'>
                                     <h6 className='card-title'>{c.name}</h6>
                                     <p className='card-text'>Capital: {c.capital}</p>
-                                    <Link className='btn btn-outline-info' to={`/country/${c.name}`}  >
-                                        + Details Information
-                                    </Link>
+
                                 </div>
+                                </Link>                         
                              </div>
                        </div>
                  )}
