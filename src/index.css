@@ -33,5 +33,23 @@ input[type='search'] {
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 } 
-.link
- { text-decoration: none; text-transform: capitalize;letter-spacing: 0.5px;color: rgb(0, 129, 189);}
+.link{ 
+  text-decoration: none; 
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  color: rgb(0, 129, 189);
+}
+.nav-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align:right;
+}
+.navbar-nav {
+  margin-left: auto;
+  padding-left: 25px;
+}
+ /*======= responsive media query ====== */
+
+
+
+

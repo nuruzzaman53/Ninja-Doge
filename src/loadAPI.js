@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import ReactPaginate from 'react-paginate'
 import {Link} from 'react-router-dom'
+import Menu from './Menu'
 
 const Country = () => {
 
@@ -49,14 +50,12 @@ const Country = () => {
 
 
     return(
+                   
         <div className='container'>
-
-            <h1 className='display-4'>WorldInfo</h1>
-             <p style={{fontSize:'18px'}}>Discover the whole world with just one click</p> <br/>
-
+             <Menu /> <br/>
             <input type='search'           
                 className='form-control col-md-8 col-sm-3' 
-                placeholder='Enter A country name to search .....'
+                placeholder='Enter A country .....'
                 onChange={ e => setSearch(e.target.value)}        
             />
 
@@ -64,7 +63,7 @@ const Country = () => {
             <div className='row'>
             <div className='justify-content-center'>{loadingData(loading)}</div>
                 {filteredData.slice(pageVisited,pageVisited + countryPerPage).map(c =>
-                         <div class="col-xs-10 col-sm-5 col-md-5  col-lg-4 col-xl-3 my-3">
+                         <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3 my-3">
                              <div className='card' style={{width: "18rem" ,height:"18rem"}}>
                                 <Link to={`/country/${c.name}`} className='link' >
                                 <img src={c.flag} className="card-img-top"  alt={c.flag}  />
@@ -83,18 +82,21 @@ const Country = () => {
 
             <div className='row'>
                 <ReactPaginate 
-                      previousLabel={'Previous'}
-                      nextLabel={'Next'}
-                      pageCount={pageCount}
-                      onPageChange={changePage}
-                      containerClassName={'pagination'}
-                      previousLinkClassName={'page-link'}
-                      nextLinkClassName={'page-link'}
-                      pageClassName={'page-item'}
-                      activeClassName={'active'}
-                      pageLinkClassName={'page-link'}
+                        previousLabel={'Previous'}
+                        nextLabel={'Next'}
+                        pageCount={pageCount}
+                        onPageChange={changePage}
+                        containerClassName={'pagination'}
+                        previousLinkClassName={'page-link'}
+                        nextLinkClassName={'page-link'}
+                        pageClassName={'page-item'}
+                        activeClassName={'active'}
+                        pageLinkClassName={'page-link'}
                 />
             </div>
+            
+
+
         </div>
     )
 }
