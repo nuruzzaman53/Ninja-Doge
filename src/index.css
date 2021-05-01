@@ -48,6 +48,14 @@ input[type='search'] {
   margin-left: auto;
   padding-left: 25px;
 }
+
+.social_link {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+
  /*======= responsive media query ====== */
 
 

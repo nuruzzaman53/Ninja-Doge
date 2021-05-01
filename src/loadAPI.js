@@ -29,7 +29,7 @@ const Country = () => {
         })
     },[])
 
-    console.log(data)
+    
 
     const loadingData = (loading) => {
         if(loading) {

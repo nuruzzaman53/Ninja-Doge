@@ -3,9 +3,9 @@ import {Link,withRouter} from 'react-router-dom'
 
 const isActive = (history,path) => {
     if(history.location.pathname === path){
-        return { color:'orange',borderBottom:'solid'}
+        return { color:'indigo',borderBottom:'solid'}
     }else {
-        return { color:'black'}
+        return { color:'tomato'}
     }
 }
 
@@ -21,7 +21,8 @@ const Menu = ({history}) => {
 
                 <ul className="navbar-nav">
                     <li className='nav-item'><Link style={isActive(history,'/')} className='nav-link' to='/'>Home</Link></li> 
-                    <li className='nav-item'><Link style={isActive(history,'/about')} className='nav-link' to='/about'>About Us</Link></li> 
+                    <li className='nav-item'><Link style={isActive(history,'/about')} className='nav-link' to='/about'>About Author</Link></li> 
+                    <li className='nav-item'><Link style={isActive(history,'/portfolio')} className='nav-link' to='/portfolio'>Portfolio</Link></li> 
                 </ul>
         </nav>
        </div>
