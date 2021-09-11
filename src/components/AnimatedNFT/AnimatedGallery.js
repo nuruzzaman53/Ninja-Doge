@@ -3,6 +3,7 @@ import Shogun from '../../images/Shogun.gif'
 import Sensei from '../../images/Sensei.gif'
 import Hani_Kami from '../../images/Hani_Kami.gif'
 import Berserker from '../../images/Berserker.gif'
+//import Poster from '../../images/poster.jpg'
 
 function Card() {
     return (
@@ -13,13 +14,15 @@ function Card() {
                 <h1>Animated NFT Series</h1> <br/>
 
                 <div className='row justify-content-center'>
-                    <img src={Sensei} width='800px' height='400px' alt='Big_image' />
+                    <video  width='900' height='400' controls >
+                        <source src=""  />
+                    </video>
                 </div>
 
                 <div className='row my-3 justify-content-center'>
                     <div className='col-md-2'>
                         <div class="card"  >
-                                <img src={Shogun} className='card-img-top'alt="..." />
+                               <img src={Shogun} className='card-img-top'alt="..." />
                                 <div class="card-body text-center my-3">
                                     <p class="card-text">Video Title</p>
 

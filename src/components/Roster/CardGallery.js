@@ -27,14 +27,14 @@ const CardGallery = () => {
                        
                     </div>
 
-                    <div className='col-md-3  ml-auto'>
+                    <div className='col-md-3  ml-auto mr-3'>
                         <form class="form-inline">
-                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option value="1">Most Recent</option>
                                 <option value="2">Favourite</option>
                                 <option value="3">NinjaDose</option>
                             </select>
-                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option value="1">Tier 3</option>
                                 <option value="2">Tier 4</option>
                                 <option value="3">Tier 5</option>
@@ -48,7 +48,7 @@ const CardGallery = () => {
                 <div className='row justify-content-center my-3'>
 
                     <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card" >
+                        <div className="card" >
                             <img src={ninja1} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
@@ -62,44 +62,44 @@ const CardGallery = () => {
                     </div>
                     <div className='col-sm-6 col-md-4 col-lg-2'>
                         <div class="card"  >
-                            <Link to='/'><img src={ninja2} className='card-img-top' alt="..." /></Link>
+                            <img src={ninja2} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
-                                <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
                             </div>
                         </div>
    
                     </div>
                     <div className='col-sm-6 col-md-4 col-lg-2'>
                         <div class="card"  >
-                            <Link to='/'><img src={ninja3} className='card-img-top' alt="..." /></Link>
+                            <img src={ninja3} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
-                                <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
                             </div>
                         </div>
    
                     </div>
                     <div className='col-sm-6 col-md-4 col-lg-2'>
                         <div class="card"  >
-                            <Link to='/'><img src={ninja4} className='card-img-top' alt="..." /></Link>
+                            <img src={ninja4} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
-                                <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
                             </div>
                         </div>
    
                     </div>
                     <div className='col-sm-6 col-md-4 col-lg-2'>
                         <div class="card"  >
-                            <Link to='/'><img src={ninja5} className='card-img-top' alt="..." /></Link>
+                            <img src={ninja5} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
-                                <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
                             </div>
                         </div>
    
@@ -109,124 +109,127 @@ const CardGallery = () => {
 
                 <div className='row justify-content-center my-3'>
 
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja1} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div className="card" >
+                            <img src={ninja1} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'> <p class="card-text text-primary">
+                                    CARD DETAILS <i class="fa fa-arrow-circle-right"></i>
+                                </p>
+                                </Link>
+                            </div>
                         </div>
+
+                    </div>
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div class="card"  >
+                            <img src={ninja2} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div class="card"  >
+                            <img src={ninja3} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div class="card"  >
+                            <img src={ninja4} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div class="card"  >
+                            <img src={ninja5} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
+                            </div>
+                        </div>
+
                     </div>
 
-                </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja2} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja3} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja4} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja5} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                </div> { /* ending row */}
+                    </div> { /* ending row */}
 
                 <div className='row justify-content-center my-3'>
 
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja1} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div className="card" >
+                            <img src={ninja1} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'> <p class="card-text text-primary">
+                                    CARD DETAILS <i class="fa fa-arrow-circle-right"></i>
+                                </p>
+                                </Link>
+                            </div>
                         </div>
+
+                    </div>
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div class="card"  >
+                            <img src={ninja2} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div class="card"  >
+                            <img src={ninja3} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div class="card"  >
+                            <img src={ninja4} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                        <div class="card"  >
+                            <img src={ninja5} className='card-img-top' alt="..." />
+                            <div class="card-body text-center my-3">
+                                <h5 class="card-title text-white">Card Name</h5>
+                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                </Link>
+                            </div>
+                        </div>
+
                     </div>
 
-                </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja2} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja3} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja4} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
-                    <div class="card"  >
-                        <Link to='/'><img src={ninja5} className='card-img-top' alt="..." /></Link>
-                        <div class="card-body text-center my-3">
-                            <h5 class="card-title text-white">Card Name</h5>
-                            <p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                </div> { /* ending row */}
-                
+                    </div> { /* ending row */}
 
                 <div className='row justify-content-center'>
                     <nav aria-label="...">

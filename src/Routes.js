@@ -10,6 +10,8 @@ import WhitePaper from './Pages/WhitePaper'
 import Blog from './Pages/Blog'
 import JoinTelegram from './Pages/JoinTelegram'
 import AnimatedNFT from './components/AnimatedNFT/AnimatedNFT'
+import Archives from './components/Archive/Archive'
+import Guide from './components/Guide/Guide'
 
 const Routes = () => {
     return(
@@ -18,6 +20,8 @@ const Routes = () => {
                 <Route path='/' exact component={Home}/>
                 <Route path='/roster' exact component={Roster}/>
                 <Route path='/animatedNFT' exact component={AnimatedNFT} />
+                <Route path='/archives' exact component={Archives} />
+                <Route path='/guide' exact component={Guide} />
                 <Route path='/buy_now' exact component={BuyNow}/>
                 <Route path='/how_to_buy' exact component={HowToBuy}/>
                 <Route path='/reward_dashboard' exact component={RewardDashboard}/>

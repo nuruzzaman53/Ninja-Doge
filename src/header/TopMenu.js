@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from '../images/ninja_logo.png'
 
+
+
 const TopMenu = () => {
     return (
         <div className='container-fluid'>
@@ -15,7 +17,7 @@ const TopMenu = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
 
                     <ul className="navbar-nav">
-                        <li className="nav-item"><a className="nav-link active" href="/">Buy Now</a></li>
+                        <li className="nav-item active"><a className="nav-link" href="/buy_now">Buy Now</a> </li>
                         <li className="nav-item"><a className="nav-link" href="/">How to Buy</a></li>
                         <li className="nav-item"><a className="nav-link" href="/">Reward Dashboard</a></li>
                         <li className="nav-item"><a className="nav-link" href="/">Reward Policy</a></li>

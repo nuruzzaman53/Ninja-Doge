@@ -9,9 +9,16 @@ body {
   font-weight: normal;
   src: url('./fonts/Hey\ August.woff') format('woff');
 }
-
+/* GLOBAL STYLE */
 .container,.row,.col,h1,h2,h3,h4,h5 {
   font-family: 'Poppins', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
  /* styling Navbar section */
@@ -32,20 +39,25 @@ body {
   padding-left: 5px;
   margin-right:120px;
 }
+.nav-item .active {
+  font-weight: bold;
+}
 
  /* styling telegram button */
 
-.nav-item a.nav-link.btn_color  {
+.nav-item a.nav-link.btn_color,.btn_color  {
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  font-weight: bold;
   padding:8px 15px;
   color: white;
   margin-left:20px;
   background: rgb(236,24,14);
-  background: linear-gradient(90deg, rgba(236,24,14,1) 0%, rgba(205,84,96,1) 0%, rgba(246,174,174,1) 100%);
+  background: linear-gradient(90deg, rgba(236,24,14,1) 0%, rgba(200,69,82,1) 0%, rgba(238,198,202,1) 100%);
 }
-.nav-item a.nav-link.btn_color:hover {
+.btn_color {
+  margin-left:0px;
+}
+.nav-item a.nav-link.btn_color:hover,.btn_color:hover {
   color:white;
 }
 .custom_bg {
@@ -86,6 +98,8 @@ body {
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
   border-radius:5px;
+}
+.reward .list-group-item-action {
   background-color: #131313;
 }
 
@@ -98,6 +112,7 @@ body {
   background-color: #3a3a3a;
   background-blend-mode:multiply;
   background-size:cover;
+  background-position: top center;
 }
 .ninja_card h1 {
   font-size: 50px;
@@ -165,8 +180,6 @@ body {
 
 /* Search Bar */
 
-
-
 .input-icons i {
   position: absolute;
 }
@@ -189,3 +202,25 @@ body {
   text-align: center;
   margin-left: 10px;
 }
+
+
+/* Styling Modal Popup */
+
+.modal-content {
+  background-color: #131313;
+  color:white;
+  border-radius: 20px;
+}
+.modal-content select {
+  background-color: #3a3a3a;
+  color: white;
+  border: none;
+}
+
+.modal p small { color: #3a3a3a; }
+
+.close_btn     { color: #ff6675; }
+
+/*  styling Guide section */
+
+.post_style   { border-radius:7px; }
