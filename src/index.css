@@ -1,63 +1,191 @@
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: rgb(255, 246, 233,0.2);
+  font-size: 14px;
 }
-.container,.row,.col {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@font-face {
+  font-family: 'Hey August Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/Hey\ August.woff') format('woff');
 }
-h5 {
-  margin-bottom:25px;
-  font-size: 18px;
+
+.container,.row,.col,h1,h2,h3,h4,h5 {
+  font-family: 'Poppins', sans-serif;
 }
-.highlight {
-  padding:5px;
-  border-radius:10px;
+
+ /* styling Navbar section */
+ .navbar-brand {
+   margin-left:auto;
+   margin-right:auto;
+   padding-left: 120px;
+ }
+.nav-item a.nav-link:link {
   color:black;
-  font-weight: 600px;
 }
-.fa {
-  margin-right: 10px;
-}
-.card {
-  background-color: rgba(169, 168, 170, 0);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-}
-input[type='search'] {
-  width:50%;
-  border-radius: 20px;
-}
-.card:hover{
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-} 
-.link{ 
-  text-decoration: none; 
+.nav .nav-item {
   text-transform: capitalize;
-  letter-spacing: 0.5px;
-  color: rgb(0, 129, 189);
-}
-.nav-link {
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align:right;
+  text-align: right;
 }
 .navbar-nav {
   margin-left: auto;
-  padding-left: 25px;
+  padding-left: 5px;
+  margin-right:120px;
 }
 
-.social_link {
+ /* styling telegram button */
+
+.nav-item a.nav-link.btn_color  {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
   font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin-left: 5px;
+  padding:8px 15px;
+  color: white;
+  margin-left:20px;
+  background: rgb(236,24,14);
+  background: linear-gradient(90deg, rgba(236,24,14,1) 0%, rgba(205,84,96,1) 0%, rgba(246,174,174,1) 100%);
+}
+.nav-item a.nav-link.btn_color:hover {
+  color:white;
+}
+.custom_bg {
+  background-color:#212121;
 }
 
- /*======= responsive media query ====== */
+.custom_bg h1 {
+  font-weight: bold;
+}
+.nav .nav-link {
+  color: white;
+}
+.list-group-item {
+  background-color: #212121;
+  color: white;
+  border: 1px solid rgb(71, 71, 71,0.5);
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  margin-left: 2px;
+}
+
+ /* styling Reward section */
+
+ .reward {
+  padding: 40px;
+}
+
+.reward {
+  background-color: #131313;
+}
+.reward h1 { font-weight: bold;}
+.reward h2 { 
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+.reward_cycle {
+  border: 1px solid rgb(71, 71, 71,0.5);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  background-color: #131313;
+}
+
+ /* styling ninja card section */
+
+.ninja_card {
+  padding-top:50px;
+  padding-bottom:20px;
+  background-image: url('./images/card_bg.jpg');
+  background-color: #3a3a3a;
+  background-blend-mode:multiply;
+  background-size:cover;
+}
+.ninja_card h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color:#c84552;
+  text-align: center;
+}
+.card {
+  border:none;
+  background: none;
+}
+.card-title {
+  font-weight: bold;
+  color:#c84552;
+}
+.card-text {
+  color: white;
+  margin-top: -10px;
+}
+
+
+/* ====== styling mint(3000) section */
+.mint {
+  padding:50px;
+  background: #131313 url('./images/3000_bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat:space;
+}
+.mint h1,h3,small { color: white;}
+.mint button {
+  background: white;
+  color:#c84552;
+  padding: 8px 60px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius: 20px;
+}
+.mint h1 {
+  font-family: 'Hey August Regular';
+  font-size:80px;
+  text-shadow: 0px 3px #000;
+}
+.mint small { font-size: 11px; }
+
+/* ====== styling footer section */
+.footer {
+  padding:20px;
+}
+
+/* ====== styling social media icon */
+.social {
+  padding-right: 0px;
+}
+.social_media {
+  color: #000;
+  margin-left: 30px;
+}
+
+/* styling pagination */
+.page-link {
+  background-color: #131313;
+  color: white;
+}
+
+/* Search Bar */
 
 
 
+.input-icons i {
+  position: absolute;
+}
 
+.search_box {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-left: 12px;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.icon {
+  padding: 10px;
+  color: #c84552;
+  min-width: 50px;
+  text-align: center;
+  margin-left: 10px;
+}
