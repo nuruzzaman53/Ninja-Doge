@@ -1,0 +1,23 @@
+@media only screen and (min-width:320px) {
+    .ninja_card>h1 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width:480px) {
+    .ninja_card>h1 {
+        color: rgb(113, 0, 128);
+    }
+}
+
+@media only screen and (min-width:767px) {
+    .ninja_card>h1 {
+        color: rgb(128, 0, 0);
+    }
+}
+
+@media only screen and (min-width:991px) {
+    .ninja_card>h1 {
+        color: rgb(0, 30, 128);
+    }
+}

@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Mint = () => {
     return (
         <div className='mint text-center'>

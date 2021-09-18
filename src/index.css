@@ -22,35 +22,22 @@ a:hover {
 }
 
  /* styling Navbar section */
- .navbar-brand {
-   margin-left:auto;
-   margin-right:auto;
-   padding-left: 120px;
- }
-.nav-item a.nav-link:link {
-  color:black;
-}
+
 .nav .nav-item {
   text-transform: capitalize;
-  text-align: right;
 }
-.navbar-nav {
-  margin-left: auto;
-  padding-left: 5px;
-  margin-right:120px;
-}
-.nav-item .active {
-  font-weight: bold;
+.navbar-brand {
+  margin-left: 160px;
 }
 
  /* styling telegram button */
 
-.nav-item a.nav-link.btn_color,.btn_color  {
+li.nav-item a.nav-link.btn_color,.btn_color  {
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  padding:8px 15px;
+  padding:8px 18px;
+  margin-left: 14px;
   color: white;
-  margin-left:20px;
   background: rgb(236,24,14);
   background: linear-gradient(90deg, rgba(236,24,14,1) 0%, rgba(200,69,82,1) 0%, rgba(238,198,202,1) 100%);
 }
@@ -123,6 +110,7 @@ a:hover {
 .card {
   border:none;
   background: none;
+  margin:20px 10px;
 }
 .card-title {
   font-weight: bold;
@@ -159,9 +147,7 @@ a:hover {
 .mint small { font-size: 11px; }
 
 /* ====== styling footer section */
-.footer {
-  padding:20px;
-}
+
 
 /* ====== styling social media icon */
 .social {
@@ -183,38 +169,52 @@ a:hover {
 .input-icons i {
   position: absolute;
 }
-
+.input-icons {
+  margin-left: 23px;
+}
 .search_box {
-  width: 100%;
-  padding: 10px;
+  width: 90%;
   text-align: center;
-  margin-left: 12px;
+  padding-left: 10px;
 }
 
 .input-icons {
   width: 100%;
-  margin-bottom: 10px;
 }
 .icon {
   padding: 10px;
   color: #c84552;
   min-width: 50px;
   text-align: center;
-  margin-left: 10px;
 }
 
 
 /* Styling Modal Popup */
 
-.modal-content {
-  background-color: #131313;
+.wallet {
+  background: #131313;
+}
+
+p.card_price  {
+  color: #454545;
+  margin-top: -15px;
+  font-size: 12px;
+
+}
+.modal-content,.bg_black_radius{
+  background-color: black;
   color:white;
   border-radius: 20px;
+  padding: 30px;
 }
-.modal-content select {
+.modal-content select,.custom_select {
   background-color: #3a3a3a;
   color: white;
   border: none;
+}
+select option {
+  background-color: #131313;
+  color:#c84552;
 }
 
 .modal p small { color: #3a3a3a; }
@@ -224,3 +224,45 @@ a:hover {
 /*  styling Guide section */
 
 .post_style   { border-radius:7px; }
+
+.dropdown-menu {
+  background-color: #131313;
+}
+.dropdown-menu a.nav-item {
+  color:white;
+}
+
+
+
+@media only screen and (max-width:600px) {
+  .navbar-brand,.navbar-nav li { margin-left: 15px;}
+  .footer_left { margin-left:50px;}
+  .footer_right { margin-right:80px;}
+  .ninja_card h1 { font-size: 34px;margin-top: -30px;}
+  .ninja_card h1.nft_heading { font-size: 25px;}
+  .ninja_card  .card { margin-top: 0px;}
+  .reward h1 { text-align: center;font-size: 25px;}
+  .reward p {text-align: center;}
+  .mint h1 { font-size: 70px;}
+  .nft_card  { 
+    display: inline-block; 
+  }
+
+   video {width: 290px;height:200px;  }
+  .video_tag { width:160px;height: auto;margin-top:-05px;padding: 3px;}
+  .video_tag p {margin-top: -25px;font-size: 12px;}
+  .archieve_card,.roster_card { width: 10rem;height: 15rem;padding:2px;}
+  .archieve_card h5,.roster_card h5 { font-size:13px;margin-top: -20px;}
+  .archieve_card p,.roster_card p { font-size: 10px;}
+  .paginated { margin-top: 50px;padding-top: 5px;}
+  .post_style { width:310px;text-align: left;}
+  .post_style h2 { font-size: 20px;}
+}
+
+@media only screen and (min-width:600px) {
+}
+
+@media only screen and (min-width:1200px) {
+
+}
+

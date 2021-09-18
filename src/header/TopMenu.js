@@ -1,40 +1,42 @@
 import React from 'react'
+import { Link,NavLink } from 'react-router-dom'
 import logo from '../images/ninja_logo.png'
 
-
-
 const TopMenu = () => {
+
     return (
-        <div className='container-fluid'>
 
             <nav className="navbar navbar-expand-lg navbar-light bg-white">
 
-                 <a className="navbar-brand" href="/"><img src={logo} alt='Ninja Logo' /></a>
-                <button className="navbar-toggler"  data-toggle="collapse" data-target="#navbarNav" >
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+                <div className='container-fluid'>
 
-                <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className='row inline-block'>
 
-                    <ul className="navbar-nav">
-                        <li className="nav-item active"><a className="nav-link" href="/buy_now">Buy Now</a> </li>
-                        <li className="nav-item"><a className="nav-link" href="/">How to Buy</a></li>
-                        <li className="nav-item"><a className="nav-link" href="/">Reward Dashboard</a></li>
-                        <li className="nav-item"><a className="nav-link" href="/">Reward Policy</a></li>
-                        <li className="nav-item"><a className="nav-link" href="/">Whitepaper</a></li>
-                        <li className="nav-item"><a className="nav-link" href="/">Blog</a></li>
-                        <li className="nav-item">
-                            <a className="nav-link btn_color" href="/">JOIN OUR TELEGRAM</a>
-                        </li>
+                    <Link className="navbar-brand" to="/"><img src={logo} alt='Ninja Logo' /></Link>
+                    <button className="navbar-toggler border-0"  data-toggle="collapse" data-target="#navbarNav" >
+                        <span className="navbar-toggler-icon ml-4"></span>
+                    </button>
 
-                        <li className="nav-item">
-                            <a className="nav-link btn_color" href="/"> CONNECT TO WALLET </a>
-                        </li>
-    
-                    </ul>
-                </div>
+                    <div className="collapse navbar-collapse " id="navbarNav">
+
+                        <ul className="navbar-nav ml-auto">
+                            <li className="nav-item"><NavLink className="nav-link" exact activeClassName='active' to="/buy_now">Buy Now</NavLink> </li>
+                            <li className="nav-item"><NavLink className="nav-link" exact activeClassName='active' to="/">How to Buy</NavLink></li>
+                            <li className="nav-item"><NavLink className="nav-link" exact activeClassName='active' to="/">Reward Dashboard</NavLink></li>
+                            <li className="nav-item"><NavLink className="nav-link" exact activeClassName='active' to="/">Reward Policy</NavLink></li>
+                            <li className="nav-item"><NavLink className="nav-link" exact activeClassName='active' to="/">Whitepaper</NavLink></li>
+                            <li className="nav-item"><NavLink className="nav-link" exact activeClassName='active' to="/">Blog</NavLink></li>
+                            <li className="nav-item"><NavLink className="nav-link btn_color text-white" exact activeClassName='active' to="/">JOIN OUR TELEGRAM</NavLink></li>
+                            <li className="nav-item"><NavLink className="nav-link btn_color text-white" exact activeClassName='active' to="/"> CONNECT TO WALLET </NavLink></li>
+        
+                        </ul>
+                        
+                    </div>
+                    
+                    </div>   
+
+                    </div>    
             </nav>
-        </div>
     )
 }
 

@@ -47,8 +47,8 @@ const ArchiveGallery = () => {
 
                 <div className='row justify-content-center my-3'>
 
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div className="card" >
+                    <div className='col-lg-2 archieve_card'>
+                        <div className="card"  >
                             <img src={ninja1} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
@@ -60,8 +60,8 @@ const ArchiveGallery = () => {
                         </div>
    
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
+                    <div className='col-lg-2 archieve_card'>
+                        <div class="card"   >
                             <img src={ninja2} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
@@ -73,7 +73,7 @@ const ArchiveGallery = () => {
                         </div>
    
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2 archieve_card'>
                         <div class="card"  >
                             <img src={ninja3} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
@@ -87,7 +87,7 @@ const ArchiveGallery = () => {
                         </div>
    
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2 archieve_card'>
                         <div class="card"  >
                             <img src={ninja4} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
@@ -99,7 +99,7 @@ const ArchiveGallery = () => {
                         </div>
    
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2 archieve_card'>
                         <div class="card"  >
                             <img src={ninja5} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
@@ -116,7 +116,7 @@ const ArchiveGallery = () => {
 
                 <div className='row justify-content-center my-3'>
 
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja1} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -127,7 +127,7 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja2} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -138,7 +138,7 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className=' col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja3} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -149,7 +149,7 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja4} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -160,7 +160,7 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja5} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -172,11 +172,12 @@ const ArchiveGallery = () => {
 
                 </div>
 
+
                 </div> { /* ending row */}
 
                 <div className='row justify-content-center my-3'>
 
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja1} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -187,7 +188,7 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja2} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -198,7 +199,7 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                        <img src={ninja3} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -209,7 +210,7 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja4} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -220,7 +221,7 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
-                <div className='col-sm-6 col-md-4 col-lg-2'>
+                <div className='col-lg-2 archieve_card'>
                     <div class="card"  >
                         <img src={ninja5} className='card-img-top' alt="..." />
                         <div class="card-body text-center my-3">
@@ -232,10 +233,11 @@ const ArchiveGallery = () => {
 
                 </div>
 
+
                 </div> { /* ending row */}
                 
 
-                <div className='row justify-content-center'>
+                <div className='row justify-content-center paginated'>
                     <nav aria-label="...">
                         <ul class="pagination pagination-md">
                             <li class="page-item active" aria-current="page">

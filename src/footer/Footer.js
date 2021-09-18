@@ -1,25 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <div className='footer'>
-            <div className='container'>
-                <div className='row'>
-                    <div className='col-md-6 text-left'>
-                        <p> &copy; Ninja Doge. all right reserved</p>
+            <div className='container-fluid'>
+                <div className='row py-3'>
+                    <div className='col-lg-4 text-left footer_left'>
+                       <p className='text-sm-center'>&copy; Ninja Doge. all right reserved</p>
                     </div>
-                    <div className='col-md-6 text-right'>
-                        <p className='social'>
-                           <Link to='/'><i className="fa fa-twitter fa-2x social_media" ></i></Link> 
-                           <Link to='/'><i class="fa fa-facebook-official fa-2x social_media"  ></i></Link> 
-                           <Link to='/'><i class="fa fa-telegram fa-2x social_media"></i></Link> 
-                           <Link to='/'><i class="fa fa-instagram fa-2x social_media"></i></Link> 
+                    <div className='col-lg-7  text-right footer_right'>
+                         <p className='social'>
+                           <Link to='/'><i className="fa fa-twitter  social_media" ></i></Link> 
+                           <Link to='/'><i class="fa fa-facebook-official  social_media"  ></i></Link> 
+                           <Link to='/'><i class="fa fa-telegram social_media"></i></Link> 
+                           <Link to='/'><i class="fa fa-instagram  social_media"></i></Link> 
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 

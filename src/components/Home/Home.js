@@ -5,6 +5,7 @@ import Footer from '../../footer/Footer'
 import Card from './Card'
 import Reward from './Reward'
 import Mint from './Mint'
+import Wallet from './Wallet'
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <SubMenu />
             <Card />
             <Mint />
+            <Wallet />
             <Reward />
             <Footer />
         </div>

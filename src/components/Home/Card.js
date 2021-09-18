@@ -16,9 +16,9 @@ function Card() {
                 <br/> <br/>
 
                 <div className='row justify-content-center my-3'>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2'>
                         <div class="card"  >
-                            <img src={cp1} className='card-img-top' style={{cursor:'pointer'}} data-toggle="modal" data-target="#exampleModal" alt="..." />
+                            <img src={cp1} className='card-img-top' style={{cursor:'pointer'}}  alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title">1 Card</h5>
                                 <p class="card-text">0.4 BNB</p>
@@ -26,9 +26,9 @@ function Card() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2'>
                         <div class="card"  >
-                        <Link to='/'><img src={p5}  className='card-img-top'data-toggle="modal" data-target="#exampleModal"  alt="..." /></Link>
+                        <Link to='/'><img src={p5}  className='card-img-top' alt="..." /></Link>
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title">5 Pack</h5>
                                 <p class="card-text">1.7 BNB(0.34 EACH)</p>
@@ -37,9 +37,9 @@ function Card() {
                         </div>
                     </div>
 
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2'>
                         <div class="card"  >
-                        <Link to='/'> <img src={p10}  className='card-img-top'data-toggle="modal" data-target="#exampleModal" alt="..." /></Link>
+                        <Link to='/'> <img src={p10}  className='card-img-top' alt="..." /></Link>
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title">10 Pack</h5>
                                 <p class="card-text">3.33 BNB(0.33 EACH)</p>
@@ -48,9 +48,9 @@ function Card() {
                         </div>
                     </div>
 
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2'>
                         <div class="card"  >
-                        <Link to='/'><img src={p15}  className='card-img-top' data-toggle="modal" data-target="#exampleModal"  alt="..." /></Link>
+                        <Link to='/'><img src={p15}  className='card-img-top'   alt="..." /></Link>
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title">15 Pack</h5>
                                 <p class="card-text"> 4.8 BNB(0.32 EACH) </p>
@@ -59,9 +59,9 @@ function Card() {
                         </div>
                     </div>
 
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2'>
                         <div class="card"  >
-                        <Link to='/'><img src={p25}  className='card-img-top' data-toggle="modal" data-target="#exampleModal" alt="..." /></Link>
+                        <Link to='/'><img src={p25}  className='card-img-top'  alt="..." /></Link>
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title">25 Pack</h5>
                                 <p class="card-text">7.5 BNB(0.30 EACH)</p>

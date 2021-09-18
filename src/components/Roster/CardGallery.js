@@ -18,7 +18,7 @@ const CardGallery = () => {
                 
                 <div className='row justify-content-center'>
 
-                    <div className='col-md-2 offset-md-1'>
+                    <div className='col-lg-3 offset-md-1'>
                         <div class="input-icons">
                             <i class="fa fa-search icon"></i>
                             <input type='search' value='Search' placeholder='Search' 
@@ -27,7 +27,7 @@ const CardGallery = () => {
                        
                     </div>
 
-                    <div className='col-md-3  ml-auto mr-3'>
+                    <div className='col-lg-3  ml-auto mr-3'>
                         <form class="form-inline">
                             <select className="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option value="1">Most Recent</option>
@@ -45,10 +45,10 @@ const CardGallery = () => {
 
                 </div>
 
-                <div className='row justify-content-center my-3'>
+                <div className='row justify-content-center my-0'>
 
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div className="card" >
+                    <div className='col-lg-2 roster_card'>
+                        <div className="card">
                             <img src={ninja1} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
@@ -60,8 +60,8 @@ const CardGallery = () => {
                         </div>
    
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
+                    <div className='col-lg-2 roster_card'>
+                        <div class="card"   >
                             <img src={ninja2} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
@@ -71,8 +71,8 @@ const CardGallery = () => {
                         </div>
    
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
+                    <div className='col-lg-2 roster_card'>
+                        <div class="card" >
                             <img src={ninja3} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
@@ -82,8 +82,8 @@ const CardGallery = () => {
                         </div>
    
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
+                    <div className='col-lg-2 roster_card'>
+                        <div class="card"   >
                             <img src={ninja4} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
@@ -93,8 +93,8 @@ const CardGallery = () => {
                         </div>
    
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
+                    <div className='col-lg-2 roster_card'>
+                        <div class="card" >
                             <img src={ninja5} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title text-white">Card Name</h5>
@@ -104,12 +104,13 @@ const CardGallery = () => {
                         </div>
    
                     </div>
+
 
                 </div> { /* ending row */}
 
-                <div className='row justify-content-center my-3'>
+                <div className='row justify-content-center my-0'>
 
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2 roster_card'>
                         <div className="card" >
                             <img src={ninja1} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
@@ -122,7 +123,7 @@ const CardGallery = () => {
                         </div>
 
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2 roster_card'>
                         <div class="card"  >
                             <img src={ninja2} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
@@ -133,7 +134,7 @@ const CardGallery = () => {
                         </div>
 
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2 roster_card'>
                         <div class="card"  >
                             <img src={ninja3} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
@@ -144,7 +145,7 @@ const CardGallery = () => {
                         </div>
 
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2 roster_card'>
                         <div class="card"  >
                             <img src={ninja4} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
@@ -155,7 +156,7 @@ const CardGallery = () => {
                         </div>
 
                     </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
+                    <div className='col-lg-2 roster_card'>
                         <div class="card"  >
                             <img src={ninja5} className='card-img-top' alt="..." />
                             <div class="card-body text-center my-3">
@@ -167,69 +168,71 @@ const CardGallery = () => {
 
                     </div>
 
-                    </div> { /* ending row */}
-
-                <div className='row justify-content-center my-3'>
-
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div className="card" >
-                            <img src={ninja1} className='card-img-top' alt="..." />
-                            <div class="card-body text-center my-3">
-                                <h5 class="card-title text-white">Card Name</h5>
-                                <Link to='/'> <p class="card-text text-primary">
-                                    CARD DETAILS <i class="fa fa-arrow-circle-right"></i>
-                                </p>
-                                </Link>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
-                            <img src={ninja2} className='card-img-top' alt="..." />
-                            <div class="card-body text-center my-3">
-                                <h5 class="card-title text-white">Card Name</h5>
-                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-                                </Link>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
-                            <img src={ninja3} className='card-img-top' alt="..." />
-                            <div class="card-body text-center my-3">
-                                <h5 class="card-title text-white">Card Name</h5>
-                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-                                </Link>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
-                            <img src={ninja4} className='card-img-top' alt="..." />
-                            <div class="card-body text-center my-3">
-                                <h5 class="card-title text-white">Card Name</h5>
-                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-                                </Link>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div className='col-sm-6 col-md-4 col-lg-2'>
-                        <div class="card"  >
-                            <img src={ninja5} className='card-img-top' alt="..." />
-                            <div class="card-body text-center my-3">
-                                <h5 class="card-title text-white">Card Name</h5>
-                                <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
-                                </Link>
-                            </div>
-                        </div>
-
-                    </div>
 
                     </div> { /* ending row */}
+
+                <div className='row justify-content-center my-0'>
+
+                        <div className='col-lg-2 roster_card'>
+                            <div className="card" >
+                                <img src={ninja1} className='card-img-top' alt="..." />
+                                <div class="card-body text-center my-3">
+                                    <h5 class="card-title text-white">Card Name</h5>
+                                    <Link to='/'> <p class="card-text text-primary">
+                                        CARD DETAILS <i class="fa fa-arrow-circle-right"></i>
+                                    </p>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='col-lg-2 roster_card'>
+                            <div class="card"  >
+                                <img src={ninja2} className='card-img-top' alt="..." />
+                                <div class="card-body text-center my-3">
+                                    <h5 class="card-title text-white">Card Name</h5>
+                                    <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='col-lg-2 roster_card'>
+                            <div class="card"  >
+                                <img src={ninja3} className='card-img-top' alt="..." />
+                                <div class="card-body text-center my-3">
+                                    <h5 class="card-title text-white">Card Name</h5>
+                                    <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='col-lg-2 roster_card'>
+                            <div class="card"  >
+                                <img src={ninja4} className='card-img-top' alt="..." />
+                                <div class="card-body text-center my-3">
+                                    <h5 class="card-title text-white">Card Name</h5>
+                                    <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div className='col-lg-2 roster_card'>
+                            <div class="card"  >
+                                <img src={ninja5} className='card-img-top' alt="..." />
+                                <div class="card-body text-center my-3">
+                                    <h5 class="card-title text-white">Card Name</h5>
+                                    <Link to='/'><p class="card-text text-primary">CARD DETAILS <i class="fa fa-arrow-circle-right"></i></p>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        </div> { /* ending row */}
 
                 <div className='row justify-content-center'>
                     <nav aria-label="...">

@@ -3,7 +3,7 @@ import Shogun from '../../images/Shogun.gif'
 import Sensei from '../../images/Sensei.gif'
 import Hani_Kami from '../../images/Hani_Kami.gif'
 import Berserker from '../../images/Berserker.gif'
-//import Poster from '../../images/poster.jpg'
+
 
 function Card() {
     return (
@@ -11,7 +11,7 @@ function Card() {
 
             <div className='container'>
 
-                <h1>Animated NFT Series</h1> <br/>
+                <h1 className='nft_heading'>Animated NFT Series</h1> <br/>
 
                 <div className='row justify-content-center'>
                     <video  width='900' height='400' controls >
@@ -20,8 +20,8 @@ function Card() {
                 </div>
 
                 <div className='row my-3 justify-content-center'>
-                    <div className='col-md-2'>
-                        <div class="card"  >
+                    <div className='col-md-2 video_tag '>
+                        <div class="card "  >
                                <img src={Shogun} className='card-img-top'alt="..." />
                                 <div class="card-body text-center my-3">
                                     <p class="card-text">Video Title</p>
@@ -29,7 +29,7 @@ function Card() {
                                 </div>
                         </div>                           
                     </div>
-                    <div className='col-md-2'>
+                    <div className='col-md-2 video_tag'>
                         <div class="card"  >
                                 <img src={Sensei} className='card-img-top'alt="..." />
                                 <div class="card-body text-center my-3">
@@ -38,7 +38,7 @@ function Card() {
                                 </div>
                         </div>                           
                     </div>
-                    <div className='col-md-2'>
+                    <div className='col-md-2 video_tag'>
                         <div class="card"  >
                                 <img src={Hani_Kami} className='card-img-top'alt="..." />
                                 <div class="card-body text-center my-3">
@@ -47,7 +47,7 @@ function Card() {
                                 </div>
                         </div>                           
                     </div>
-                    <div className='col-md-2'>
+                    <div className='col-md-2 video_tag'>
                         <div class="card"  >
                                 <img src={Berserker} className='card-img-top'alt="..." />
                                 <div class="card-body text-center my-3">
@@ -56,7 +56,7 @@ function Card() {
                                 </div>
                         </div>                           
                     </div>
-                    <div className='col-md-2'>
+                    <div className='col-md-2 video_tag'>
                         <div class="card"  >
                                 <img src={Shogun} className='card-img-top'alt="..." />
                                 <div class="card-body text-center my-3">
