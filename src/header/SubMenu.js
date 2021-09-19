@@ -14,9 +14,9 @@ const SubMenu = () => {
                          <li className='nav-item'><NavLink exact className='nav-link' activeClassName='active'  to="/archives">Archive</NavLink></li>
 
                         <li class="nav-item dropdown">
-                            <NavLink class="nav-link dropdown-toggle" data-toggle="dropdown" to="/" role="button" aria-haspopup="true" 
+                            <NavLink class="nav-link dropdown-toggle" data-toggle="dropdown" to="#subMenu" role="button" aria-haspopup="true" 
                             aria-expanded="false">Marketplace</NavLink>
-                            <div class="dropdown-menu">
+                            <div class="dropdown-menu" id='subMenu'>
                             <NavLink class="dropdown-item text-primary" to="/">Marketplace</NavLink>
                             <NavLink class="dropdown-item text-primary" to="/">Portfolio</NavLink>
                             <NavLink class="dropdown-item text-primary" to="/">Earn</NavLink>
@@ -45,6 +45,22 @@ const SubMenu = () => {
                         <div class="dropdown-menu align-items-center" aria-labelledby="dropdownMenuButton">
                             <NavLink class="dropdown-item nav-link" to="/">Purchase</NavLink>
                             <NavLink class="dropdown-item nav-link" to="/roster">My Roster</NavLink>
+
+                            <NavLink class="nav-link dropdown-toggle" data-toggle="dropdown" to="#subMenu" role="button" aria-haspopup="true" 
+                            aria-expanded="false">Marketplace</NavLink>
+                            <div class="dropdown-menu" id='subMenu'>
+                            <NavLink class="dropdown-item text-primary" to="/">Marketplace</NavLink>
+                            <NavLink class="dropdown-item text-primary" to="/">Portfolio</NavLink>
+                            <NavLink class="dropdown-item text-primary" to="/">Earn</NavLink>
+                            <NavLink class="dropdown-item text-primary" to="/">Gatcha</NavLink>
+
+                            <div class="dropdown-divider"></div>
+                                <NavLink class="dropdown-item text-primary" to="/">Defi Vault Ranking</NavLink>
+                                <NavLink class="dropdown-item text-primary" to="/">NFT Viewer</NavLink>
+                                <NavLink class="dropdown-item text-primary" to="/">SCV Bridge</NavLink>
+                                <NavLink class="dropdown-item text-primary" to="/">Doodle</NavLink>
+                            </div>
+
                             <NavLink class="dropdown-item nav-link" to="/archives">Archive</NavLink>
                             <NavLink class="dropdown-item nav-link" to="/guide">Guide</NavLink>
                             <NavLink class="dropdown-item nav-link" to="/animatedNFT">Animated NFT Series</NavLink>

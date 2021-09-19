@@ -10,7 +10,7 @@ const GuidePost = () => {
 
             <div className='container-fluid'>
 
-                <div className='row justify-content-center'>
+                <div className='row justify-content-center filter_options'>
                    <div className='col-md-2 offset-md-1' id="searchButton">
                         <div class="input-icons">
                             <i class="fa fa-search icon"></i>
@@ -19,7 +19,7 @@ const GuidePost = () => {
                         </div>
                     
                     </div>
-                    <div className='col-md-2 offset-md-1 ml-auto mr-4'>
+                    <div className='col-md-2 offset-md-1 ml-auto mr-5' id='filter'>
                         <form class="form-inline">
                             <select className="custom-select  mr-sm-2" id="inlineFormCustomSelectPref">
                                 <option value="1">Most Recent</option>
@@ -32,8 +32,8 @@ const GuidePost = () => {
                </div> <br/>
 
                 <div className='row justify-content-center'>
-                    <div className='col-10 post_style bg-white '>
-                        <div class="card p-3">
+                    <div className='col-10 post_style'>
+                        <div class="card p-5 bg-white">
                             <h2 className='font-weight-bold'>Introduction of Ninja Dose BlockChain</h2>
                             <h6 class="card-subtitle mb-2 text-muted">Unique NFT's That will take over the Binance Smart Chain </h6><br/>
                             <img src={postImage} class="card-img-top" alt="..." /> <br/>
@@ -51,9 +51,9 @@ const GuidePost = () => {
                     </div>
                 </div>  { /* Ending Row class */} <br/><br/>
 
-                <div className='row justify-content-center guide'>
-                    <div className='col-md-10 bg-white post_style'>
-                        <div class="card p-4 guide_post">
+                <div className='row justify-content-center'>
+                    <div className='col-10 post_style'>
+                        <div class="card p-5 bg-white">
                             <h2 className='font-weight-bold'>Introduction of Ninja Dose BlockChain</h2>
                             <h6 class="card-subtitle mb-2 text-muted">Unique NFT's That will take over the Binance Smart Chain </h6><br/>
                             <img src={postImage2} class="card-img-top" alt="..." /> <br/>

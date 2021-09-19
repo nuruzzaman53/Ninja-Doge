@@ -17,7 +17,7 @@ function Card() {
 
                 <div className='row justify-content-center my-3'>
                     <div className='col-lg-2'>
-                        <div class="card"  >
+                        <div class="card home_card"  >
                             <img src={cp1} className='card-img-top' style={{cursor:'pointer'}}  alt="..." />
                             <div class="card-body text-center my-3">
                                 <h5 class="card-title">1 Card</h5>

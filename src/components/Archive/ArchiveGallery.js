@@ -18,7 +18,7 @@ const ArchiveGallery = () => {
                 
                 <div className='row justify-content-center'>
 
-                    <div className='col-md-2 offset-md-1'>
+                    <div className='col-md-2 offset-md-1' id='searchBar'>
                         <div class="input-icons">
                             <i class="fa fa-search icon"></i>
                             <input type='search' value='Search' placeholder='Search' 
@@ -44,6 +44,8 @@ const ArchiveGallery = () => {
                     </div>
 
                 </div>
+
+
 
                 <div className='row justify-content-center my-3'>
 
@@ -236,7 +238,7 @@ const ArchiveGallery = () => {
 
                 </div> { /* ending row */}
                 
-
+                
                 <div className='row justify-content-center paginated'>
                     <nav aria-label="...">
                         <ul class="pagination pagination-md">
