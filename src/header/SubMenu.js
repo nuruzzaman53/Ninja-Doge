@@ -11,7 +11,7 @@ const SubMenu = () => {
                         <ul class="nav nav-pills nav-fill" id="navbarPills">
                          <li className='nav-item'><NavLink exact className='nav-link' activeClassName='active'  to="/">Purchase</NavLink></li>
                          <li className='nav-item'><NavLink exact className='nav-link' activeClassName='active'   to="/roster">My Roster</NavLink></li>
-                         <li className='nav-item'><NavLink exact className='nav-link' activeClassName='active'  to="/archives">Archive</NavLink></li>
+                         { /*<li className='nav-item'><NavLink exact className='nav-link' activeClassName='active'  to="/archives">Archive</NavLink></li>*/}
 
                         <li class="nav-item dropdown">
                             <NavLink class="nav-link dropdown-toggle" data-toggle="dropdown" to="#subMenu" role="button" aria-haspopup="true" 
@@ -61,7 +61,7 @@ const SubMenu = () => {
                                 <NavLink class="dropdown-item text-primary" to="/">Doodle</NavLink>
                             </div>
 
-                            <NavLink class="dropdown-item nav-link" to="/archives">Archive</NavLink>
+                            { /* <NavLink class="dropdown-item nav-link" to="/archives">Archive</NavLink> */}
                             <NavLink class="dropdown-item nav-link" to="/guide">Guide</NavLink>
                             <NavLink class="dropdown-item nav-link" to="/animatedNFT">Animated NFT Series</NavLink>
                         </div>

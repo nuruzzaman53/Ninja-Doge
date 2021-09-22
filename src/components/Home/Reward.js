@@ -40,11 +40,11 @@ const Reward = () => {
                             </a>
                         </div> <br/>
 
-                        <h4 className='text-white text-center'><span style={{color:'#38ff23'}}>735%(7.35x)</span> Potential More Rewards</h4>
+                        <h5 className='text-white text-center'><span style={{color:'#38ff23'}}>735%(7.35x)</span> Potential More Rewards</h5>
 
                     </div>
 
-                    <div className='col-sm-6 col-md-5 reward_cycle p-3 m-1'>
+                    <div className='col-sm-6 col-md-5 reward_cycle p-3 m-1 '>
                         <h2 className='text-white text-center'>30-Day Reward Cycle</h2>
                         <div className="list-group text-center">
                             <a href="/" className="list-group-item list-group-item-action">
@@ -67,7 +67,7 @@ const Reward = () => {
                             </a>
                         </div> <br/>
 
-                        <h4 className='text-white text-center'><span style={{color:'#38ff23'}}>64%</span>(0.64x) Potential More Rewards</h4>
+                        <h5 className='text-white text-center'><span style={{color:'#38ff23'}}>73.5%(0.735x)</span> Potential More Rewards</h5>
 
                     </div>
                     

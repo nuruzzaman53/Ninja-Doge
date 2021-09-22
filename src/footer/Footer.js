@@ -2,13 +2,14 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 const Footer = () => {
+    
     return (
             <div className='container-fluid'>
                 <div className='row py-3'>
-                    <div className='col-lg-4 text-left footer_left'>
+                    <div className='col-sm-6 col-md-5  footer_left'>
                        <p className='text-sm-center'>&copy; Ninja Doge. all right reserved</p>
                     </div>
-                    <div className='col-lg-7  text-right footer_right'>
+                    <div className='col-sm-6 col-md-5  footer_right'>
                          <p className='social'>
                            <Link to='/'><i className="fa fa-twitter  social_media" ></i></Link> 
                            <Link to='/'><i class="fa fa-facebook-official  social_media"  ></i></Link> 

@@ -230,27 +230,41 @@ select option {
   color:white;
 }
 
+.footer_right { text-align: right;}
 
+.wallet_button { list-style-type: none;}
 
 @media only screen and (max-width:600px) {
+
+  /*Navbar styling */
   .navbar-brand,#navbarNav{margin-left: 20px;}
-  .navbar-toggler { margin-left: 70px;}
-  .footer_left { margin-left:70px;}
-  .footer_right { margin-right:150px;}
+  /* Footer styling */
+  .footer_left { text-align: center;}
+  .footer_right {text-align: center;}
+
+  /* Ninja Card styling  */
   .ninja_card h1 { font-size: 34px;margin-top: -30px;}
   .ninja_card h1.nft_heading { font-size: 25px;}
   .ninja_card  .card { margin-top:0}
+
+  /* Reward section styling*/
   .reward h1 { text-align: center;font-size: 25px;}
   .reward p {text-align: center;}
   .mint h1 { font-size: 70px;}
   .nft_card  { display: inline-block; }
-   video {width:340px;height:200px; margin:0 auto; }
-  .video_tag { width:180px;height: auto;margin-top:-05px;padding: 3px;}
+
+  /* Video section styling  */
+   video {width:320px;height:200px; margin:0 auto; }
+  .video_tag { width:170px;height: auto;margin-top:-05px;padding: 3px;}
   .video_tag p {margin-top: -25px;font-size: 12px;}
+
+  /* Archieve Card, Roster Card styling */
   .archieve_card,.roster_card { width: 12rem;height: auto;padding:1px;}
   .home_card {width:15rem;height:auto;margin:0 auto;}
   .archieve_card h5,.roster_card h5 { font-size:13px;margin-top: -10px;}
   .archieve_card p,.roster_card p { font-size: 10px;}
+
+  /* Pagination styling */
   .paginated { margin-top: 50px;padding-top: 5px;}
   .post_style { width:350px;text-align: left;margin:0 auto;padding: 2px;}
   .filter_options { margin: 0 auto;}
@@ -259,10 +273,10 @@ select option {
   .post_style h2 { font-size: 20px;}
 }
 
-@media only screen and (min-width:600px) {
+@media only screen and (min-width:1000px){
+.navbar-nav .nav-item { font-size: 12px;}
 }
-
 @media only screen and (min-width:1200px) {
-
+  .navbar-nav .nav-item { font-size: 14px;}
 }
 
